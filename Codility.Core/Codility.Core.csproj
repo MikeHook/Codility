@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayAmplitude.cs" />
+    <Compile Include="BinaryTreeAmplitude.cs" />
+    <Compile Include="Domain\Tree.cs" />
     <Compile Include="Lesson1BinaryGap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
