@@ -19,10 +19,20 @@ namespace Codility.Core
                 return A[0];
             }
 
-            var orderedA = A.OrderBy(a => a);
+            int min = A[0], max = A[0];
+            for (int i = 1; i < A.Length; i++)
+            {
+                if (min > A[i])
+                {
+                    min = A[i];
+                }
+                if (max < A[i])
+                {
+                    max = A[i];
+                }
+            }
 
-            var result = (long) orderedA.Last() - (long) orderedA.First();
-            return result > int.MaxValue ? 0 : (int) result;
+            return max - min;
         }
     }
 }

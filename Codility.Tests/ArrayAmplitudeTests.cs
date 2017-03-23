@@ -21,8 +21,8 @@
                 get
                 {
                     yield return new TestCaseData(new int[] { 9,0}).Returns(9);
-                    yield return new TestCaseData(new int[] { 2147483647, 0}).Returns(2147483647);
-                    yield return new TestCaseData(new int[] { 2147483647, -1}).Returns(0);  //Unknown what this answer should be
+                    yield return new TestCaseData(new int[] { 5000000, 0}).Returns(5000000);
+                    yield return new TestCaseData(new int[] { 5000000, 10}).Returns(4999990);
                     yield return new TestCaseData(new int[] { 1}).Returns(1);
                     yield return new TestCaseData(new int[] { 1, 1}).Returns(0);
                     yield return new TestCaseData(new int[] { }).Returns(0);
